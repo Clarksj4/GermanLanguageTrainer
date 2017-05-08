@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GermanLanguageTrainer</string>
+    <string name="app_description">German Language Trainer</string>
+    <string name="male_article">der</string>
+    <string name="neutral_article">das</string>
+    <string name="female_article">die</string>
+    <string name="out_of">%1$d / %2$d</string>
+</resources>

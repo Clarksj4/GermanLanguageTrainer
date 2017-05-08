@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="noun_images">
+        <item>@drawable/das_auto</item>
+        <item>@drawable/das_haus</item>
+        <item>@drawable/das_schaf</item>
+        <item>@drawable/der_apfel</item>
+        <item>@drawable/der_baum</item>
+        <item>@drawable/der_stuhl</item>
+        <item>@drawable/die_ente</item>
+        <item>@drawable/die_hexe</item>
+        <item>@drawable/die_kuh</item>
+        <item>@drawable/die_milch</item>
+        <item>@drawable/die_strasse</item>
+    </string-array>
+
+    <string-array name="noun_names">
+        <item>auto</item>
+        <item>haus</item>
+        <item>schaf</item>
+        <item>apfel</item>
+        <item>baum</item>
+        <item>stuhl</item>
+        <item>ente</item>
+        <item>hexe</item>
+        <item>kuh</item>
+        <item>milch</item>
+        <item>strasse</item>
+    </string-array>
+
+    <string-array name="noun_pronunciations">
+        <item>@raw/auto</item>
+        <item>@raw/haus</item>
+        <item>@raw/schaf</item>
+        <item>@raw/apfel</item>
+        <item>@raw/baum</item>
+        <item>@raw/stuhl</item>
+        <item>@raw/ente</item>
+        <item>@raw/hexe</item>
+        <item>@raw/kuh</item>
+        <item>@raw/milch</item>
+        <item>@raw/strasse</item>
+    </string-array>
+
+    <string-array name="noun_articles">
+        <item>das</item>
+        <item>das</item>
+        <item>das</item>
+        <item>der</item>
+        <item>der</item>
+        <item>der</item>
+        <item>die</item>
+        <item>die</item>
+        <item>die</item>
+        <item>die</item>
+        <item>die</item>
+    </string-array>
+</resources>

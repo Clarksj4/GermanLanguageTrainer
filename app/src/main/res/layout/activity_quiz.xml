@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bit.clarksj4.germanlanguagetrainer.QuizActivity"
+    android:background="@color/sceneBackground"
+    android:id="@+id/rootRelativeLayout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sceneImageView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/scene"
+        android:scaleType="fitEnd"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleImageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/noun_gender"
+        android:layout_marginTop="65dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nounFrameLayout"
+        android:background="#6e685c"
+        android:layout_below="@+id/titleImageView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nounImageView"
+            android:src="@drawable/der_apfel"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/frameImageView"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/frame"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apfel"
+            android:id="@+id/nounNameTextView"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textSize="40dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/black"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="5.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 / 11"
+            android:id="@+id/quizIndexTextView"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="5.0" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_below="@+id/nounFrameLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/articleButtonsRelativeLayout">
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/maleArticleImageButton"
+            android:src="@drawable/der"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:tag="@string/male_article"
+            android:nestedScrollingEnabled="false"
+            android:focusableInTouchMode="false"
+            android:adjustViewBounds="false"
+            android:background="@drawable/custom_button" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/neutralArticleImageButton"
+            android:layout_alignBottom="@+id/maleArticleImageButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/das"
+            android:scaleType="fitXY"
+            android:tag="@string/neutral_article"
+            android:background="@drawable/custom_button" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/femaleArticleImageButton"
+            android:layout_alignBottom="@+id/neutralArticleImageButton"
+            android:src="@drawable/die"
+            android:scaleType="fitXY"
+            android:layout_gravity="right"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:tag="@string/female_article"
+            android:background="@drawable/custom_button" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/curtainsImageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/curtains"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true" />
+
+</RelativeLayout>

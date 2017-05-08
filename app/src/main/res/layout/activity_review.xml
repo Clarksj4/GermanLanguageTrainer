@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sceneBackground"
+    tools:context="bit.clarksj4.germanlanguagetrainer.ReviewActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/titleImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="43dp"
+                android:src="@drawable/review" />
+
+            <TextView
+                android:id="@+id/outOfTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="11 / 11"
+                android:textColor="@android:color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/incorrectGuessesTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/outOfTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/curtainsImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/curtains" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/incorrectGuessesTableLayout"
+                android:id="@+id/alignBottomLinearLayout">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spaceFillingLinearLayout"
+                    android:layout_weight="1"></LinearLayout>
+
+                <ImageView
+                    android:id="@+id/sceneImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/scene"
+                    android:layout_below="@+id/incorrectGuessesTableLayout" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
